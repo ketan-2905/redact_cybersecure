@@ -38,7 +38,7 @@ export default function BlockchainPage() {
   useEffect(() => {
     const fetchLedger = async () => {
       try {
-        const res = await fetch('http://localhost:8000/blockchain/ledger');
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}blockchain/ledger`);
         if (!res.ok) throw new Error('Failed to fetch ledger');
         const data = await res.json();
         setLedger(data);

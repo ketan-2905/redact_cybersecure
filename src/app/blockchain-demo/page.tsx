@@ -315,7 +315,7 @@ const BlockchainExplorer = () => {
 
   useEffect(() => {
     // Fetch ledger from backend
-    fetch('http://localhost:8000/blockchain/ledger')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}blockchain/ledger`)
       .then(res => res.json())
       .then(data => {
         setLedger(data);
