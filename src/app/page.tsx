@@ -102,7 +102,7 @@ export default function Landing() {
 
 
       {/* Hero Section */}
-      <section ref={vantaRef} className="w-screen h-screen mt-[60px]">
+      <section ref={vantaRef} className="w-screen h-screen mt-[47px]">
         <div className="w-full h-full relative z-10 grid md:grid-cols-2 gap-12 items-center px-8">
           
           <div className="pl-4">

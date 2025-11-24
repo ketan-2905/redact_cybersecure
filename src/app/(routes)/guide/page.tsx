@@ -276,7 +276,7 @@ BEHAVIOR GUIDE:
   const Icon = selectedAttack?.icon || Shield;
 
   return (
-    <div className="min-h-screen bg-[#1d1d1d] text-gray-100 mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-gray-100 mt-[47px]">
       {/* Header */}
       <div className="border-b border-[#515151]/20 bg-[#1d1d1d]/50 backdrop-blur-sm">
         <div className="px-6 py-4">

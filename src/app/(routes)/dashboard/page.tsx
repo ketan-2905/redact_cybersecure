@@ -23,7 +23,7 @@ export default function DashboardPage() {
 
   return (
     
-          <div className="min-h-screen bg-[#1d1d1d] text-white overflow-hidden font-sans mt-[60px]">
+          <div className="min-h-screen bg-[#1d1d1d] text-white overflow-hidden font-sans mt-[47px]">
         {/* Background Effects (copied from landing) */}
         <div className="fixed inset-0 z-0 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-br from-[#1d1d1d] via-[#222222] to-[#3a3a3a]"></div>

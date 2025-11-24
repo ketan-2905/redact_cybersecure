@@ -290,7 +290,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
   const malicious = total - benign;
 
   return (
-    <div className="min-h-screen bg-[#1d1d1d] text-white p-6 mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-white p-6 mt-[47px]">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8">
         <div className="flex items-center justify-between mb-2">

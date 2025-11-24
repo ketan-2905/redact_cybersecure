@@ -518,7 +518,7 @@ export default function BlockchainDemoPage() {
   const [activePage, setActivePage] = useState<Page>('merkle');
 
   return (
-    <div className="min-h-screen bg-[#1d1d1d] text-white flex font-sans mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-white flex font-sans mt-[47px]">
       
       {/* Sidebar */}
       <aside className="w-64 border-r border-[#515151]/20 bg-[#1d1d1d] fixed h-full z-10">
