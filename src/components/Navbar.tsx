@@ -27,8 +27,8 @@ const Navbar = () => {
             href="/"
             className={`transition ${
               isActive("/")
-                ? "text-blue-400 border-b-2 border-blue-400 pb-1"
-                : "text-white hover:text-blue-400"
+                ? "text-[#e3e3e3] border-b-2 border-[#6a6a6a] pb-1"
+                : "text-white hover:text-[#bfbfbf]"
             }`}
           >
             Home
@@ -38,8 +38,8 @@ const Navbar = () => {
             href="/dashboard"
             className={`transition ${
               isActive("/dashboard")
-                ? "text-blue-400 border-b-2 border-blue-400 pb-1"
-                : "text-white hover:text-blue-400"
+                ? "text-[#e3e3e3] border-b-2 border-[#6a6a6a] pb-1"
+                : "text-white hover:text-[#bfbfbf]"
             }`}
           >
             Dashboard
@@ -49,7 +49,7 @@ const Navbar = () => {
             href="/analyze"
             className={`transition ${
               isActive("/analyze")
-                ? "text-blue-400 border-b-2 border-blue-400 pb-1"
+                ? "text-[#e3e3e3] border-b-2 border-[#6a6a6a] pb-1"
                 : ""
             }`}
           >
@@ -71,8 +71,8 @@ const Navbar = () => {
             href="/blockchain-demo"
             className={`transition ${
               isActive("/blockchain-demo")
-                ? "text-blue-400 border-b-2 border-blue-400 pb-1"
-                : "text-white hover:text-blue-400"
+                ? "text-[#e3e3e3] border-b-2 border-[#6a6a6a] pb-1"
+                : "text-white hover:text-[#bfbfbf]"
             }`}
           >
             Blockchain
@@ -82,8 +82,8 @@ const Navbar = () => {
             href="/guide"
             className={`transition ${
               isActive("/guide")
-                ? "text-blue-400 border-b-2 border-blue-400 pb-1"
-                : "text-white hover:text-blue-400"
+                ? "text-[#e3e3e3] border-b-2 border-[#6a6a6a] pb-1"
+                : "text-white hover:text-[#bfbfbf]"
             }`}
           >
             Guide

@@ -290,14 +290,14 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
   const malicious = total - benign;
 
   return (
-    <div className="min-h-screen bg-[#0a0e27] text-white p-6 mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-white p-6 mt-[60px]">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-3">
-            <Shield className="w-8 h-8 text-blue-400" />
+            <Shield className="w-8 h-8 text-[#bfbfbf]" />
             <div>
-              <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+              <h1 className="text-3xl font-bold text-[#e3e3e3]">
                 CSV File Analysis
               </h1>
               <p className="text-gray-400 text-sm">Upload multiple files for comparative threat analysis</p>
@@ -402,7 +402,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <div className="border-2 border-dashed border-gray-700 rounded-xl p-8 text-center hover:border-blue-500 transition-colors">
+              <div className="border-2 border-dashed border-gray-700 rounded-xl p-8 text-center hover:border-[#6a6a6a] transition-colors">
                 <input
                   type="file"
                   accept=".csv"
@@ -422,7 +422,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
               </div>
 
               {file && (
-                <div className="flex items-center justify-between p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                <div className="flex items-center justify-between p-4 bg-[#515151]/10 border border-[#515151]/30 rounded-lg">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-400" />
                     <div>
@@ -433,7 +433,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
                   <button
                     onClick={handleUpload}
                     disabled={uploading}
-                    className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 rounded-lg font-bold transition disabled:opacity-50 flex items-center gap-2"
+                    className="px-6 py-2 bg-[#515151] hover:bg-[#6a6a6a] rounded-lg font-bold transition disabled:opacity-50 flex items-center gap-2"
                   >
                     {uploading ? (
                       <>
@@ -464,7 +464,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
         {results && (
           <>
             {/* File Info Banner */}
-            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-lg p-4">
+            <div className="bg-[#515151]/10 border border-[#515151]/30 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <div>
                   <h3 className="font-bold text-white">Currently Viewing: {results.filename}</h3>
@@ -518,7 +518,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
                       <p className="text-sm text-gray-400">Total Flows</p>
                       <p className="text-3xl font-bold text-white">{total.toLocaleString()}</p>
                     </div>
-                    <Shield className="w-12 h-12 text-blue-400" />
+                    <Shield className="w-12 h-12 text-[#bfbfbf]" />
                   </div>
                 </CardContent>
               </Card>
@@ -672,7 +672,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
                   <button
                     onClick={handleGenerateInterpretation}
                     disabled={generatingInterpretation || !results.featureImportance || results.featureImportance.length === 0}
-                    className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold shadow-lg transition disabled:opacity-50 flex items-center justify-center"
+                    className="w-full py-3 rounded-xl bg-[#515151] hover:bg-[#6a6a6a] text-white font-bold shadow-lg transition disabled:opacity-50 flex items-center justify-center"
                   >
                     {generatingInterpretation ? (
                       <>
@@ -739,7 +739,7 @@ Keep it concise (under 250 words), professional, and actionable. Use proper para
                   <button
                     onClick={handleGenerateReport}
                     disabled={generatingReport}
-                    className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold shadow-lg transition disabled:opacity-50 flex items-center whitespace-nowrap"
+                    className="px-6 py-2.5 rounded-lg bg-[#515151] hover:bg-[#6a6a6a] text-white font-bold shadow-lg transition disabled:opacity-50 flex items-center whitespace-nowrap"
                   >
                     {generatingReport ? (
                       <>

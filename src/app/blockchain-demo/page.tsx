@@ -518,19 +518,19 @@ export default function BlockchainDemoPage() {
   const [activePage, setActivePage] = useState<Page>('merkle');
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa] dark:bg-[#0a0e27] text-gray-900 dark:text-white flex font-sans mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-white flex font-sans mt-[60px]">
       
       {/* Sidebar */}
-      <aside className="w-64 border-r border-gray-200 dark:border-white/10 bg-white dark:bg-[#0a0e27] fixed h-full z-10">
+      <aside className="w-64 border-r border-[#515151]/20 bg-[#1d1d1d] fixed h-full z-10">
         <div className="p-6">
-          <h2 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">📑 Pages</h2>
+          <h2 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">📑 Pages</h2>
           <nav className="space-y-1">
             <button 
               onClick={() => setActivePage('merkle')}
               className={`w-full flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                 activePage === 'merkle' 
-                  ? 'bg-blue-50 text-blue-600 dark:bg-blue-600/10 dark:text-blue-400' 
-                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5'
+                  ? 'bg-[#515151] text-white' 
+                  : 'text-gray-400 hover:bg-[#515151]/20'
               }`}
             >
               <Database className="w-4 h-4" /> Merkle Playground
@@ -539,8 +539,8 @@ export default function BlockchainDemoPage() {
               onClick={() => setActivePage('upload')}
               className={`w-full flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                 activePage === 'upload' 
-                  ? 'bg-blue-50 text-blue-600 dark:bg-blue-600/10 dark:text-blue-400' 
-                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5'
+                  ? 'bg-[#515151] text-white' 
+                  : 'text-gray-400 hover:bg-[#515151]/20'
               }`}
             >
               <Upload className="w-4 h-4" /> Upload Logs
@@ -549,8 +549,8 @@ export default function BlockchainDemoPage() {
               onClick={() => setActivePage('explorer')}
               className={`w-full flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                 activePage === 'explorer' 
-                  ? 'bg-blue-50 text-blue-600 dark:bg-blue-600/10 dark:text-blue-400' 
-                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5'
+                  ? 'bg-[#515151] text-white' 
+                  : 'text-gray-400 hover:bg-[#515151]/20'
               }`}
             >
               <Search className="w-4 h-4" /> Blockchain Explorer
@@ -564,12 +564,12 @@ export default function BlockchainDemoPage() {
         <div className="max-w-6xl mx-auto">
           <header className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white flex items-center gap-3">
-              <Shield className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+              <Shield className="w-8 h-8 text-[#bfbfbf]" />
               Blockchain & IDS Demo
             </h1>
           </header>
 
-          <div className="bg-white dark:bg-[#111633] rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 p-1">
+          <div className="bg-[#515151]/10 rounded-2xl shadow-sm border border-[#515151]/20 p-1">
             {activePage === 'merkle' && <MerklePlayground />}
             {activePage === 'upload' && <UploadLogs />}
             {activePage === 'explorer' && <BlockchainExplorer />}

@@ -23,12 +23,12 @@ export default function DashboardPage() {
 
   return (
     
-          <div className="min-h-screen bg-[#0a0e27] text-white overflow-hidden font-sans mt-[60px]">
+          <div className="min-h-screen bg-[#1d1d1d] text-white overflow-hidden font-sans mt-[60px]">
         {/* Background Effects (copied from landing) */}
         <div className="fixed inset-0 z-0 pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0e27] via-[#1a1534] to-[#2d1b3d]"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1d1d1d] via-[#222222] to-[#3a3a3a]"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#515151]/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#6a6a6a]/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
         {/* Main Content */}
@@ -65,7 +65,7 @@ export default function DashboardPage() {
                   className={cn(
                     "flex items-center px-6 py-2.5 rounded-lg text-sm font-medium transition-all duration-200",
                     activeTab === item.id
-                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                      ? "bg-[#515151] hover:bg-[#6a6a6a] text-white shadow-lg"
                       : "text-gray-400 hover:text-white hover:bg-white/5"
                   )}
                 >

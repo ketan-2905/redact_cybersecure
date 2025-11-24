@@ -276,12 +276,12 @@ BEHAVIOR GUIDE:
   const Icon = selectedAttack?.icon || Shield;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-gray-100 mt-[60px]">
+    <div className="min-h-screen bg-[#1d1d1d] text-gray-100 mt-[60px]">
       {/* Header */}
-      <div className="border-b border-gray-800 bg-gray-900/50 backdrop-blur-sm">
+      <div className="border-b border-[#515151]/20 bg-[#1d1d1d]/50 backdrop-blur-sm">
         <div className="px-6 py-4">
           <div className="flex items-center gap-3">
-            <Shield className="w-8 h-8 text-blue-400" />
+            <Shield className="w-8 h-8 text-[#bfbfbf]" />
             <div>
               <h1 className="text-2xl font-bold text-white">MITRE ATT&CK Education Guide</h1>
               <p className="text-sm text-gray-400">Interactive Cybersecurity Attack Analysis</p>
@@ -292,7 +292,7 @@ BEHAVIOR GUIDE:
 
       <div className="flex h-[calc(100vh-89px)]">
         {/* Left Panel - Attack Types */}
-        <div className="w-80 border-r border-gray-800 bg-gray-900/30 overflow-y-auto">
+        <div className="w-80 border-r border-[#515151]/20 bg-[#1d1d1d]/30 overflow-y-auto">
           <div className="p-4">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Attack Types</h2>
             <div className="space-y-2">
@@ -309,7 +309,7 @@ BEHAVIOR GUIDE:
                     className={`w-full text-left p-4 rounded-lg border transition-all ${
                       selectedAttack?.id === attack.id
                         ? `${attack.bgColor} ${attack.borderColor} border-2`
-                        : 'bg-gray-800/50 border-gray-700 hover:bg-gray-800'
+                        : 'bg-[#515151]/10 border-[#515151]/20 hover:bg-[#515151]/20'
                     }`}
                   >
                     <div className="flex items-start gap-3">
@@ -500,7 +500,7 @@ BEHAVIOR GUIDE:
         </div>
 
         {/* Right Panel - Actions */}
-        <div className="w-72 border-l border-gray-800 bg-gray-900/30 p-4">
+        <div className="w-72 border-l border-[#515151]/20 bg-[#1d1d1d]/30 p-4">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Actions</h2>
           <div className="space-y-3">
             <button
