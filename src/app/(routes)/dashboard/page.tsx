@@ -24,35 +24,11 @@ export default function DashboardPage() {
   return (
     
           <div className="min-h-screen bg-[#1d1d1d] text-white overflow-hidden font-sans mt-[47px]">
-        {/* Background Effects (copied from landing) */}
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1d1d1d] via-[#222222] to-[#3a3a3a]"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#515151]/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#6a6a6a]/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        </div>
+
 
         {/* Main Content */}
         <div className="relative z-10 flex flex-col h-screen">
-          {/* Header */}
-          {/* <header className="border-b border-white/10 bg-black/20 backdrop-blur-md">
-            <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-2 rounded-lg">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
-                <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                  SkyFort IDS
-                </span>
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20">
-                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                  <span className="text-xs font-medium text-green-400">System Online</span>
-                </div>
-                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 border border-white/10"></div>
-              </div>
-            </div>
-          </header> */}
+          
 
           {/* Dashboard Content */}
           <main className="flex-1 overflow-hidden flex flex-col max-w-7xl mx-auto w-full px-6 py-8">
